@@ -11,14 +11,14 @@ function Register({ setRegistered }) {
     try {
       await API.post('/auth/register', { email, password });
       alert('Registration successful! You can now log in.');
-      setRegistered(true); 
+      setRegistered(true); // switch to login
     } catch (err) {
       alert('Registration failed. Try another email.');
     }
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       <form onSubmit={registerHandler} className="bg-white p-6 rounded shadow-md w-80">
         <h2 className="text-xl font-semibold mb-4">Register</h2>
         <input
@@ -41,6 +41,18 @@ function Register({ setRegistered }) {
           Register
         </button>
       </form>
+
+      <div className="mt-4 text-center">
+        <p>
+          Already have an account?{' '}
+          <button
+            onClick={() => setRegistered(true)}
+            className="text-blue-500 underline"
+          >
+            Login here
+          </button>
+        </p>
+      </div>
     </div>
   );
 }
