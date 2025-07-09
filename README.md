@@ -2,7 +2,7 @@
 # 🧠 Upaay Dashboard Assignment (Frontend)
 
 This is a React-based implementation of the **Creative Upaay Dashboard** as per the assignment guidelines. It replicates the design from the provided Figma file and implements core functionalities like task management, drag-and-drop, Redux-based state management, filtering, and local storage persistence.
-
+video link- https://www.loom.com/share/3cf0447bf7fd43bdb805ffce943f9ae5?sid=eb787651-c3d1-40d8-b737-35ed46bbfa47
 ---
 
 ## 🔧 Tech Stack
